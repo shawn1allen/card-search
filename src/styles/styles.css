@@ -1,0 +1,46 @@
+body {
+    background: rgba(0, 0, 0, 0.5) no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.card-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-image {
+    min-width: 70vw;
+    max-width: 70vw;
+    border-radius: 14px;
+}
+
+.scroll-list {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    height: 600px;
+    padding-left: 15%;
+    padding-right: 15%;
+    align-items: center;
+    /* Set the height to your desired value */
+}
+
+.card {
+    flex: 0 0 30%;
+    /* Set the width of each card to 30% */
+    margin-right: 10px;
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1);
+    z-index: 1;
+}
+
+.active {
+    z-index: 2;
+    transform: scale(1.2) translateY(-10px);
+    /* Set the scale and translate values to your desired effect */
+}
+
+.btn {
+    
+}
